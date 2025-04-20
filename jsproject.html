@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Switcher and Live Text</title>
+  <style>
+    #displayArea {
+      margin-top: 20px;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Switcher and Live Text Display</h1>
+
+  <button onclick="showImage('img1')">Low Energy</button>
+  <button onclick="showImage('img2')">Full Energy</button>
+
+  <div id="imageContainer"></div>
+  
+
+  <hr>
+
+  <label for="textBox">Type something:</label>
+  <input type="text" id="textBox" oninput="updateText()" />
+
+  <div id="displayArea"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
